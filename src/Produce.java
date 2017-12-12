@@ -12,7 +12,6 @@ public class Produce extends Item {
 		//call setters
 		setExpiration(exp);
 	}
-		
 		//do all the things this constructor needs to
 		public void setExpiration(String exp) {
 			expiration = exp;
@@ -21,21 +20,23 @@ public class Produce extends Item {
 		
 		//setWeight(w);
 		
-		public void setWeight(w) {
+		public void setWeight(double w) {
 			if (w > 0) {
 				weight = w;
 			}
 			else {
-				System.out.println("Weight must be greater than 0.");
+				//weight = 1;
+				System.out.println("Weight not set. \nWeight must be greater than 0.");
 			}
 		}
-		public String getExpiration(exp) {
+			
+		public String getExpiration() {
 			return expiration;
 		}
-		public double getWeight(w) {
+		public double getWeight() {
 			return weight;
 		}
 		
 		
-	}
+
 }

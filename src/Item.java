@@ -16,30 +16,40 @@ public class Item {
 		name = n;*/
 	}
 	//setters
-	public void setUnitPrice(up) {
+	public void setUnitPrice(double up) {
 		if (up >= 0.0) {
-			unitPrice = up;
+			unitPrice = up; 
 		}
 		else {
-			System.out.println("The unit price must be greater than or equal to 0.");
+			unitPrice = 1;
+			System.out.println("The unit price cannot be negative. Default unit price to $1.00");
 		}	
 	}
-	public void setQuantity(q) {
+	public void setQuantity(int q) {
 		if (q >= 0) {
 			quantity = q;
 		}
 		else {
-			System.out.println("The quantity must be greater than or equal to 0.");
+			System.out.println("The quantity cannot be negative. Default quantity to 0.");
+			quantity = 0;
 		}
 	}
 	
+	public void setName(String n) {
+		name = n;
+	}
+	
 	//getters
-	public double getUnitPrice(up) {
+	public double getUnitPrice() {
 		return unitPrice;
 	}
 	
-	public int getQuantity(q) {
+	public int getQuantity() {
 		return quantity;
+	}
+	
+	public String getName() {
+		return name;
 	}
 	
 	

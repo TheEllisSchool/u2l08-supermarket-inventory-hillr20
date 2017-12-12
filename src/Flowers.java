@@ -9,16 +9,26 @@ public class Flowers extends Item {
 		//calls superclass constructor
 		super(up, q, n);
 		
-		public void setColor() {
+		setVariety(var);
+		setColor(col);
+	}
+		
+		public void setColor(String col) {
 			color = col;
 		}
 		
-		public void setVariety() {
+		public void setVariety(String var) {
 			variety = var;
 		}
-		public String get
+		//getters
+		public String getColor() {
+			return color;
+		}
+		public String getVariety() {
+			return variety;
+		}
 		
-	}
+	
 	
 	
 	
