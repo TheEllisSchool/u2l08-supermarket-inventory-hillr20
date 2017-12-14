@@ -14,6 +14,12 @@ public class Item {
 		quantity = q;
 		
 		name = n;*/
+		
+		setUnitPrice(up);
+		setQuantity(q);
+		name = n;
+		
+		
 	}
 	//setters
 	public void setUnitPrice(double up) {
@@ -30,7 +36,7 @@ public class Item {
 			quantity = q;
 		}
 		else {
-			System.out.println("The quantity cannot be negative. Default quantity to 0.");
+			System.out.println("The quantity cannot be negative. Default quantity to 1.");
 			quantity = 0;
 		}
 	}

@@ -29,16 +29,18 @@ public class U2L08Supermarket {
 				+ "\nWhich would you like?");
 		String input2 = JOptionPane.showInputDialog(null, "How many would you like?");
 		int amount =Integer.parseInt(input2);
-		
+		System.out.println(paperPlates);
 		//update quantity
 		if (input.equals("paper plates")) {
 			int newQuantity = paperPlates.getQuantity() - amount;
 			paperPlates.setQuantity(newQuantity);
 			
-			totalCost = totalCost + amount * paperPlates.getUnitPrice();
+			totalCost = totalCost + amount * paperPlates.getUnitPrice(); 
 		}
-		System.out.println("You purchased " + totalCost);
-		System.out.println("New paper plate values: " + paperPlates);
+		System.out.println("You purchased " + amount);
+		System.out.println("It cost " + totalCost);
+		System.out.println("New paper plate values: " + paperPlates.getQuantity());
+		
 
 	}
 
